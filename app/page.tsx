@@ -3,7 +3,7 @@ import Features from "@/components/landing/features";
 import Footer from "@/components/landing/footer";
 import Hero from "@/components/landing/hero";
 import Roadmap from "@/components/landing/roadmap";
-import Tokenomics from "@/components/landing/tokenomics";
+import Tokenomics from "@/components/token/tokenomics";
 import NavBar from "@/components/navigation/bar";
 
 export default function Home() {
@@ -13,7 +13,6 @@ export default function Home() {
       <Hero />
       <Features />
       <Roadmap />
-      <Tokenomics />
       <Faq />
       <Footer />
     </main>

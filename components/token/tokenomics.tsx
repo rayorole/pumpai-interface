@@ -14,7 +14,7 @@ import { Button } from "../ui/button";
 
 export default function Tokenomics() {
   return (
-    <div className="border-border w-full rounded-lg border px-3 py-4 backdrop-blur-[2px] md:p-6 grid gap-6 bg-gradient-to-br from-[hsl(var(--muted))] from-0% to-transparent to-20%">
+    <div className="border-border w-full rounded-lg border px-3 py-4 backdrop-blur-[2px] md:p-6 grid gap-6">
       <div className="flex flex-col items-center justify-center gap-3">
         <div className="border-border rounded-full border p-2">
           <CoinsIcon className="h-5 w-5" />

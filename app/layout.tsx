@@ -4,6 +4,11 @@ import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import Dots from "@/components/dots";
+import { cookieToInitialState } from "wagmi";
+
+import { config } from "@/lib/walletconnect";
+import Web3ModalProvider from "@/context/walletconnect";
+import { headers } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +22,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const initialState = cookieToInitialState(config, headers().get("cookie"));
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -27,7 +33,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Dots />
-          {children}
+          <Web3ModalProvider initialState={initialState}>
+            {children}
+          </Web3ModalProvider>
           <Toaster />
         </ThemeProvider>
       </body>
