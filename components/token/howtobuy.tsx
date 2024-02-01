@@ -28,8 +28,8 @@ export default function HowToBuy() {
                 </span>
               </span>
               <span className="text-muted-foreground text-sm mt-2">
-                Before you can buy tokens, you need to connect your Solana
-                wallet to the app.
+                Before you can buy tokens, you need to connect your wallet to
+                the app.
               </span>
             </p>
           </li>

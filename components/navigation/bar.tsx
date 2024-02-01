@@ -1,7 +1,7 @@
 import React from "react";
-import WalletButton from "../buttons/wallet";
 import Image from "next/image";
 import Link from "next/link";
+import WalletButton from "@/components/buttons/wallet";
 
 export default function NavBar() {
   return (

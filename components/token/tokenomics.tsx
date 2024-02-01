@@ -2,8 +2,11 @@ import {
   ArrowUpRightIcon,
   BotIcon,
   CoinsIcon,
+  GiftIcon,
   GlobeIcon,
+  LockIcon,
   PlayCircleIcon,
+  ScrollTextIcon,
 } from "lucide-react";
 import React from "react";
 import { Badge } from "../ui/badge";
@@ -28,49 +31,48 @@ export default function Tokenomics() {
           <li>
             <p className="flex flex-col">
               <span>
-                <GlobeIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <LockIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <span className="text-foreground font-medium">LP Locked</span>
+              </span>
+              <span className="text-muted-foreground">
+                Liquidity is locked forever. No rug pulls here.
+              </span>
+            </p>
+          </li>
+          <li>
+            <p className="flex flex-col">
+              <span>
+                <ScrollTextIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
                 <span className="text-foreground font-medium">
-                  Global Monitoring
+                  Contract renounced
                 </span>
               </span>
               <span className="text-muted-foreground">
-                Monitor your endpoints from all over the world. We currently
-                support all the continents.
+                The $PUMPAI contract is renounced. No one can change the code.
               </span>
             </p>
           </li>
           <li>
             <p className="flex flex-col">
               <span>
-                <PlayCircleIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <GiftIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
                 <span className="text-foreground font-medium">
-                  Monitor anything
-                </span>{" "}
+                  Earn rewards
+                </span>
               </span>
               <span className="text-muted-foreground">
-                API, DNS, domain, SSL, SMTP, ping, webpage... We can monitor it
-                all.
-              </span>
-            </p>
-          </li>
-          <li>
-            <p className="flex flex-col">
-              <span>
-                <BotIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
-                <span className="text-foreground font-medium">
-                  Cron Monitoring
-                </span>{" "}
-              </span>
-              <span className="text-muted-foreground">
-                Never let a cron job fail you. Get notified when a jobs did not
-                run successfully.
+                Earn $PUMPAI by interacting with the app.
               </span>
             </p>
             <Badge variant="secondary">Coming soon</Badge>
           </li>
           <Button asChild variant="outline" size="sm" className="w-fit">
-            <Link href="https://solscan.io/">
-              View on Solscan
+            <Link
+              href="https://bscscan.com/"
+              target="_blank"
+              rel="noopener no referrer"
+            >
+              View on BscScan
               <ArrowUpRightIcon className="ml-1 h-4 w-4 flex-shrink-0" />
             </Link>
           </Button>

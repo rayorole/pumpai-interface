@@ -26,8 +26,8 @@ export default function Faq() {
                 <AccordionContent className="text-left">
                   You can create a token by simply entering a name and a
                   description. The AI will then generate a logo for you. You can
-                  then deploy your token on Solana. For every token deployed,
-                  you will receive some $PUMPAI tokens.
+                  then deploy your token on all EVM compatible networks. For
+                  every token deployed, you will receive some $PUMPAI tokens.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

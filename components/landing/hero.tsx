@@ -16,8 +16,8 @@ export default function Hero() {
           role="none"
           className="shrink-0 bg-border w-[1px] mx-2 h-4"
         ></div>
-        <span className="sm:hidden">$PUMPAI - Live on Solana</span>
-        <span className="hidden sm:inline">$PUMPAI - Live on Solana</span>
+        <span className="sm:hidden">$PUMPAI - Live on BSC Mainnet</span>
+        <span className="hidden sm:inline">$PUMPAI - Live on BSC Mainnet</span>
         <ArrowRight className="ml-1 w-4 h-4" />
       </a>
       <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">

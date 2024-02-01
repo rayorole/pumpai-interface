@@ -1,7 +1,21 @@
-import { PlusIcon } from "lucide-react";
+import { MapIcon, PlusIcon } from "lucide-react";
 import { Button } from "../ui/button";
-import Link from "next/link";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import Image from "next/image";
+import Link from "next/link";
+import dynamic from "next/dynamic";
+
+const WorkInProgress = dynamic(
+  () => import("@/components/dash/workinprogress"),
+  { ssr: false }
+);
 
 export default function Projects() {
   return (
@@ -10,38 +24,24 @@ export default function Projects() {
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
           Your tokens
         </h3>
-        <Button variant="outline">
-          Create new
-          <PlusIcon className="w-4 h-4 ml-2" />
-        </Button>
+
+        <WorkInProgress />
       </div>
 
-      <div className="grid grid-cols-3 gap-4 my-4">
-        <Link
-          href="/dash/projects/1"
-          className="px-3 py-5 rounded-lg border hover:bg-muted/50 transition duration-100 hover:border-accent"
-        >
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <Image
-                src="/pumpailogo.png"
-                className="w-8 h-8 rounded-full"
-                alt="PumpAI"
-                width={32}
-                height={32}
-              />
-              <div className="ml-2">
-                <h4 className="text-lg font-semibold">$PUMPAI</h4>
-                <p className="text-sm text-muted-foreground">Pump.ai token</p>
-              </div>
-            </div>
-
-            <div className="flex items-center">
-              <p className="text-sm text-muted-foreground ml-2">0.0000</p>
-              <p className="text-sm text-muted-foreground ml-1">USD</p>
-            </div>
-          </div>
-        </Link>
+      <div className="w-full h-96 flex justify-center items-center">
+        <div className="flex flex-col items-center">
+          <Image
+            src="/pumpailogo.svg"
+            className="w-32 h-32"
+            alt="PumpAI"
+            width={128}
+            height={128}
+          />
+          <h4 className="text-2xl font-semibold mt-4">No tokens yet</h4>
+          <p className="text-muted-foreground text-sm tracking-tight">
+            Create your first token to get started
+          </p>
+        </div>
       </div>
     </div>
   );
