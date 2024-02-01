@@ -12,12 +12,12 @@ export default function Footer() {
             <div>
               <Image
                 src="/pumpailogo.svg"
-                alt="Pump.AI"
+                alt="Pump.ai"
                 width={64}
                 height={64}
               />
               <p className="text-muted-foreground text-xs">
-                © {new Date().getFullYear()} PumpAI. All rights reserved.
+                © {new Date().getFullYear()} Pump.ai. All rights reserved.
               </p>
             </div>
             <div className="text-right md:text-left mt-2">

@@ -13,7 +13,7 @@ import { headers } from "next/headers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pump.AI",
+  title: "Pump.ai",
   description: "Deploy your token with ease, powered by OpenAI",
 };
 

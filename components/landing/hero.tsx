@@ -27,7 +27,7 @@ export default function Hero() {
         className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl mt-4"
         data-brr="1"
       >
-        PumpAI allows everyone to create their own token using the power of AI.
+        Pump.ai allows everyone to create their own token using the power of AI.
       </span>
       <div className="my-3 text-center">
         <small className="text-sm font-medium leading-none">Powered by</small>

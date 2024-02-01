@@ -73,7 +73,7 @@ export default function Presale() {
       if (chainId !== bscTestnet.id) {
         switchChain({
           chainId: bscTestnet.id,
-        })
+        });
       } else {
         if (bscValue < 0.0002) {
           toast.error("Minimum purchase is 0.0002 BNB");
@@ -116,7 +116,7 @@ export default function Presale() {
         <div className="p-3 w-full">
           <Image
             src="/pumpailogo.png"
-            alt="PumpAI"
+            alt="Pump.ai"
             width={0}
             height={0}
             sizes="100vw"
@@ -170,7 +170,7 @@ export default function Presale() {
                   You will receive PUMPAI{" "}
                   <Image
                     src="/pumpailogo.png"
-                    alt="PumpAI"
+                    alt="Pump.ai"
                     width={16}
                     height={16}
                     className="ml-2"

@@ -7,7 +7,7 @@ export default function NavBar() {
   return (
     <nav className="flex items-center justify-between">
       <Link href="/" className="flex items-center">
-        <Image src="/pumpailogo.svg" alt="Pump.AI" width={64} height={64} />
+        <Image src="/pumpailogo.svg" alt="Pump.ai" width={64} height={64} />
       </Link>
       <ul className="flex items-center space-x-8">
         <li>
@@ -29,15 +29,15 @@ export default function NavBar() {
         <li>
           <Link
             className="text-foreground hover:text-muted-foreground inline-flex items-center underline-offset-4 hover:underline text-sm"
-            href="/changelog"
+            href="/whitepaper"
           >
-            Changelog
+            Whitepaper
           </Link>
         </li>
         <li>
           <Link
             className="text-foreground hover:text-muted-foreground inline-flex items-center underline-offset-4 hover:underline text-sm"
-            href="/docs"
+            href="https://pump-ai.gitbook.io/pump.ai-documentation/"
           >
             Docs
           </Link>

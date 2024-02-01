@@ -85,7 +85,7 @@ export default function Tokenomics() {
         <Separator className="my-4" />
         <div className="flex h-5 items-center space-x-4 text-sm">
           <small className="text-sm leading-none">
-            Token name: <span className="font-medium"> Pump.AI</span>
+            Token name: <span className="font-medium">Pump.ai</span>
           </small>
           <Separator orientation="vertical" />
           <small className="text-sm font-medium leading-none">
@@ -93,7 +93,7 @@ export default function Tokenomics() {
           </small>
           <Separator orientation="vertical" />
           <small className="text-sm font-medium leading-none">
-            Token decimals: <span className="font-medium"> 9</span>
+            Token decimals: <span className="font-medium"> 18</span>
           </small>
           <Separator orientation="vertical" />
           <small className="text-sm font-medium leading-none">

@@ -35,7 +35,7 @@ export default function Faq() {
               <AccordionItem value="item-2">
                 <AccordionTrigger>What is the $PUMPAI token?</AccordionTrigger>
                 <AccordionContent className="text-left">
-                  The $PUMPAI token is the governance token of the PumpAI
+                  The $PUMPAI token is the governance token of the Pump.ai
                   protocol. It is used to vote on proposals and to reward
                   contributors.
                 </AccordionContent>
@@ -45,10 +45,10 @@ export default function Faq() {
               <AccordionItem value="item-3">
                 <AccordionTrigger>How can I contribute?</AccordionTrigger>
                 <AccordionContent className="text-left">
-                  There are many ways to contribute to the PumpAI protocol. Such
-                  as providing liquidity, creating a token, or simply by buying
-                  $PUMPAI tokens. We also have a Github repository where you can
-                  contribute to the codebase.
+                  There are many ways to contribute to the Pump.ai protocol.
+                  Such as providing liquidity, creating a token, or simply by
+                  buying $PUMPAI tokens. We also have a Github repository where
+                  you can contribute to the codebase.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

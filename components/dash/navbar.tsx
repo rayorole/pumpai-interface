@@ -18,7 +18,7 @@ export default function Navbar() {
       >
         <Image
           src="/pumpailogo.png"
-          alt="PumpAI"
+          alt="Pump.ai"
           width={36}
           height={36}
           className="rounded-full"

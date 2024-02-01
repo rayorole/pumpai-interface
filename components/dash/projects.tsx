@@ -33,7 +33,7 @@ export default function Projects() {
           <Image
             src="/pumpailogo.svg"
             className="w-32 h-32"
-            alt="PumpAI"
+            alt="Pump.ai logo"
             width={128}
             height={128}
           />
