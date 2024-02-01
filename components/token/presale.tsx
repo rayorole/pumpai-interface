@@ -8,11 +8,11 @@ import { Divider } from "@tremor/react";
 import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { calculateTimeLeft } from "@/lib/presaleTimer";
-import { useAccount, useConfig, useReadContract } from "wagmi";
+import { useAccount, useConfig, useReadContract, useSwitchChain } from "wagmi";
 import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useChainId } from "wagmi";
 import { bsc, bscTestnet } from "viem/chains";
-import { abi } from "@/constants/abi/presale.json";
+import presaleAbi from "@/constants/abi/presale.json";
 import { PRESALETBSC } from "@/lib/adresses";
 import { writeContract, getAccount } from "wagmi/actions";
 import { TransactionExecutionErrorType, parseEther } from "viem";
@@ -62,6 +62,7 @@ export default function Presale() {
   const config = useConfig();
   const { open, close } = useWeb3Modal();
   const chainId = useChainId();
+  const { chains, switchChain } = useSwitchChain();
 
   const buyPump = async () => {
     if (!isConnected) {
@@ -70,9 +71,9 @@ export default function Presale() {
       });
     } else {
       if (chainId !== bscTestnet.id) {
-        open({
-          view: "Networks",
-        });
+        switchChain({
+          chainId: bscTestnet.id,
+        })
       } else {
         if (bscValue < 0.0002) {
           toast.error("Minimum purchase is 0.0002 BNB");
@@ -81,7 +82,7 @@ export default function Presale() {
 
         try {
           const res = await writeContract(config, {
-            abi,
+            abi: presaleAbi.abi,
             address: PRESALETBSC,
             functionName: "buy",
             value: parseEther(bscValue.toString()),
