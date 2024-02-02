@@ -12,6 +12,16 @@ import {
 import React from "react";
 import { Badge } from "../ui/badge";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+import { Skeleton } from "../ui/skeleton";
+
+const FeaturesAnimation = dynamic(
+  () => import("@/components/landing/featuresanimation"),
+  {
+    ssr: false,
+    loading: () => <Skeleton className="w-full h-full" />,
+  }
+);
 
 export default function Features() {
   return (
@@ -26,7 +36,8 @@ export default function Features() {
       </div>
       <div className="grid gap-10 grid-cols-none md:grid-cols-2">
         <div className="flex justify-center">
-          <Image src="/solana-3d.png" alt="Solana" width={370} height={370} />
+          {/* <Image src="/solana-3d.png" alt="Solana" width={370} height={370} /> */}
+          <FeaturesAnimation />
         </div>
         <ul className="gap-4 md:gap-6 flex flex-col">
           <li>

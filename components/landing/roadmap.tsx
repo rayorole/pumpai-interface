@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import { Button } from "../ui/button";
+
 export default function Roadmap() {
   return (
     <section className="mx-auto w-full max-w-4xl" id="roadmap">
@@ -11,7 +14,13 @@ export default function Roadmap() {
                 <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:dark:bg-primary">
                   <h3 className="text-3xl font-semibold">Roadmap</h3>
                   <span className="text-sm font-medium tracking-tight dark:text-gray-400">
-                    What we are working on
+                    A more detailed version of our roadmap is available{" "}
+                    <Link
+                      className="dark:text-white semibold text-primary hover:underline"
+                      href="https://docs.pumpai.finance/roadmap"
+                    >
+                      here
+                    </Link>
                   </span>
                 </div>
               </div>

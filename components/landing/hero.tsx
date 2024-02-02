@@ -39,7 +39,7 @@ export default function Hero() {
       </div>
       <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10">
         <Button asChild size="sm">
-          <Link href="/docs">Deploy now</Link>
+          <Link href="/token">Buy $PUMPAI</Link>
         </Button>
         <Button asChild size="sm" variant="outline">
           <Link href="#roadmap">

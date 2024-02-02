@@ -32,7 +32,7 @@ export const TokenSharesDonut = () => {
   return (
     <>
       <DonutChart
-        className="w-full h-full hover:shadow-lg transition p-0 duration-150 rounded-full hover:scale-105"
+        className="w-full h-full transition p-0 duration-150 rounded-full hover:scale-105"
         data={distribution}
         category="perc"
         index="name"
