@@ -2,7 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import WalletButton from "@/components/buttons/wallet";
-import Mobile from "./mobile";
+import dynamic from "next/dynamic";
+
+const Mobile = dynamic(() => import("@/components/navigation/mobile"), {
+  ssr: false,
+});
 
 export default function NavBar() {
   return (
