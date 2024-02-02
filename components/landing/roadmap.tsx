@@ -35,7 +35,7 @@ export default function Roadmap() {
                     </time>
                     <p className="mt-3">
                       Website launch, token launch, coinmarketcap listing, first
-                      token presale
+                      token presale, liquidity pool creation,
                     </p>
                   </div>
                   <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:dark:bg-primary before:bg-primary">
@@ -46,7 +46,8 @@ export default function Roadmap() {
                       2024 Q2
                     </time>
                     <p className="mt-3">
-                      Liquidity pool creation, twitter marketing, first airdrop
+                      Marketing campaign, partnerships, community growth,
+                      exchange listings
                     </p>
                   </div>
                   <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-primary">

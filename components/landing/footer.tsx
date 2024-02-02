@@ -37,7 +37,7 @@ export default function Footer() {
             </Link>
             <Link
               className="text-muted-foreground hover:text-foreground inline-flex items-center underline underline-offset-4 hover:no-underline"
-              href="https://twitter.com/openstatusHQ"
+              href="https://twitter.com/PumpAITeam"
               target="_blank"
               rel="noreferrer"
             >
