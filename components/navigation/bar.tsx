@@ -2,17 +2,25 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import WalletButton from "@/components/buttons/wallet";
+import Mobile from "./mobile";
 
 export default function NavBar() {
   return (
     <nav className="flex items-center justify-between">
       <Link href="/" className="flex items-center">
-        <Image src="/pumpailogo.svg" alt="Pump.ai" width={64} height={64} />
+        <Image
+          src="/pumpailogo.svg"
+          alt="Pump.ai"
+          width={64}
+          height={64}
+          className="w-12 h-12 md:h-16 md:w-16"
+        />
       </Link>
-      <ul className="flex items-center space-x-8">
+
+      <ul className="space-x-3 border-border mx-auto hidden items-center justify-center rounded-full border px-2 backdrop-blur-[2px] md:col-span-3 md:flex md:gap-1">
         <li>
           <Link
-            className="text-foreground hover:text-muted-foreground inline-flex items-center underline-offset-4 hover:underline text-sm"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:text-white text-neutral-700 underline-offset-4 hover:underline h-9 px-4 py-2"
             href="/"
           >
             Home
@@ -20,7 +28,7 @@ export default function NavBar() {
         </li>
         <li>
           <Link
-            className="text-foreground hover:text-muted-foreground inline-flex items-center underline-offset-4 hover:underline text-sm"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:text-white text-neutral-700 underline-offset-4 hover:underline h-9 px-4 py-2"
             href="/token"
           >
             Token
@@ -28,7 +36,7 @@ export default function NavBar() {
         </li>
         <li>
           <Link
-            className="text-foreground hover:text-muted-foreground inline-flex items-center underline-offset-4 hover:underline text-sm"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:text-white text-neutral-700 underline-offset-4 hover:underline h-9 px-4 py-2"
             href="/whitepaper"
           >
             Whitepaper
@@ -36,14 +44,15 @@ export default function NavBar() {
         </li>
         <li>
           <Link
-            className="text-foreground hover:text-muted-foreground inline-flex items-center underline-offset-4 hover:underline text-sm"
-            href="https://pump-ai.gitbook.io/pump.ai-documentation/"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:text-white text-neutral-700 underline-offset-4 hover:underline h-9 px-4 py-2"
+            href="https://docs.pumpai.finance/"
           >
             Docs
           </Link>
         </li>
       </ul>
-      <div className="flex items-center">
+      <div className="flex items-center space-x-3">
+        <Mobile />
         <WalletButton />
       </div>
     </nav>
