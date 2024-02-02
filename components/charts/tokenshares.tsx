@@ -4,19 +4,27 @@ import { DonutChart } from "@tremor/react";
 const distribution = [
   {
     name: "Liquidity Pool",
-    perc: 80,
+    perc: 30,
   },
   {
-    name: "Marketing",
-    perc: 10,
+    name: "Development & Marketing",
+    perc: 5,
   },
   {
     name: "Team",
     perc: 5,
   },
   {
-    name: "Development",
-    perc: 5,
+    name: "Presale",
+    perc: 35,
+  },
+  {
+    name: "Centralized Exchange",
+    perc: 15,
+  },
+  {
+    name: "Burn",
+    perc: 10,
   },
 ];
 

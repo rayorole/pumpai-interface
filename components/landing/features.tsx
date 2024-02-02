@@ -1,8 +1,12 @@
 import {
   BotIcon,
+  CoinsIcon,
+  CrosshairIcon,
   GlobeIcon,
   LineChartIcon,
   PlayCircleIcon,
+  RocketIcon,
+  TrendingUpIcon,
   WrenchIcon,
 } from "lucide-react";
 import React from "react";
@@ -17,7 +21,7 @@ export default function Features() {
           <WrenchIcon className="h-5 w-5" />
         </div>
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-          Features
+          Upcoming features
         </h3>
       </div>
       <div className="grid gap-10 grid-cols-none md:grid-cols-2">
@@ -28,42 +32,54 @@ export default function Features() {
           <li>
             <p className="flex flex-col">
               <span>
-                <GlobeIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <CoinsIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
                 <span className="text-foreground font-medium">
-                  Global Monitoring
-                </span>{" "}
+                  AI-powered token creation
+                </span>
               </span>
               <span className="text-muted-foreground">
-                Monitor your endpoints from all over the world. We currently
-                support all the continents.
+                Create a token with a few clicks. We will take care of the rest.
               </span>
             </p>
           </li>
           <li>
             <p className="flex flex-col">
               <span>
-                <PlayCircleIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <TrendingUpIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
                 <span className="text-foreground font-medium">
-                  Monitor anything
-                </span>{" "}
+                  Automated liquidity
+                </span>
               </span>
               <span className="text-muted-foreground">
-                API, DNS, domain, SSL, SMTP, ping, webpage... We can monitor it
-                all.
+                Optionally create a liquidity pool for your token.
               </span>
             </p>
           </li>
           <li>
             <p className="flex flex-col">
               <span>
-                <BotIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <RocketIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
                 <span className="text-foreground font-medium">
-                  Cron Monitoring
-                </span>{" "}
+                  Custom launchpad
+                </span>
               </span>
               <span className="text-muted-foreground">
-                Never let a cron job fail you. Get notified when a jobs did not
-                run successfully.
+                Organize a token sale for your investors. All bells and whistles
+                included.
+              </span>
+            </p>
+            <Badge variant="secondary">Coming soon</Badge>
+          </li>
+          <li>
+            <p className="flex flex-col">
+              <span>
+                <CrosshairIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <span className="text-foreground font-medium">
+                  Token airdrops
+                </span>
+              </span>
+              <span className="text-muted-foreground">
+                Reward your community with free tokens.
               </span>
             </p>
             <Badge variant="secondary">Coming soon</Badge>
