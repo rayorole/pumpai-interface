@@ -1,7 +1,6 @@
 export const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-10-10");
-    const now = new Date();
-    const difference = targetDate.getTime() - now.getTime();
+    const unix = 1707566400;
+    const difference = unix * 1000 - new Date().getTime();
 
     if (difference <= 0) {
         return {
