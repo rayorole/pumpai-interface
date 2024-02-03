@@ -68,7 +68,7 @@ export default function Tokenomics() {
           </li>
           <Button asChild variant="outline" size="sm" className="w-fit">
             <Link
-              href="https://bscscan.com/"
+              href="https://bscscan.com/token/0xffD3E88508985cC8A93ddD3F8C29a187A2A9a7A4"
               target="_blank"
               rel="noopener no referrer"
             >
