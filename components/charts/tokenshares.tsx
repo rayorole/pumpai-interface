@@ -4,11 +4,11 @@ import { DonutChart } from "@tremor/react";
 const distribution = [
   {
     name: "Liquidity Pool",
-    perc: 30,
+    perc: 27,
   },
   {
     name: "Development & Marketing",
-    perc: 5,
+    perc: 6,
   },
   {
     name: "Team",
@@ -16,7 +16,7 @@ const distribution = [
   },
   {
     name: "Presale",
-    perc: 35,
+    perc: 27,
   },
   {
     name: "Centralized Exchange",
@@ -24,7 +24,11 @@ const distribution = [
   },
   {
     name: "Burn",
-    perc: 10,
+    perc: 11,
+  },
+  {
+    name: "Rewards",
+    perc: 9,
   },
 ];
 
@@ -47,6 +51,7 @@ export const TokenSharesDonut = () => {
           "violet-600",
           "violet-500",
           "violet-400",
+          "violet-300",
         ]}
       />
     </>

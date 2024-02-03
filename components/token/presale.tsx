@@ -14,10 +14,9 @@ import { useChainId } from "wagmi";
 import { bsc, bscTestnet } from "viem/chains";
 import presaleAbi from "@/constants/abi/presale.json";
 import { PRESALETBSC } from "@/lib/adresses";
-import { writeContract, getAccount } from "wagmi/actions";
+import { writeContract } from "wagmi/actions";
 import { TransactionExecutionErrorType, parseEther } from "viem";
 import { toast } from "sonner";
-import { getTransactionReceipt } from "viem/actions";
 
 const CountdownTimer: React.FC = () => {
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -63,6 +62,7 @@ export default function Presale() {
   const { open, close } = useWeb3Modal();
   const chainId = useChainId();
   const { chains, switchChain } = useSwitchChain();
+  const pumpaiPerBNB = 1300000; // 1 BNB = 1300000 PUMPAI
 
   const buyPump = async () => {
     if (!isConnected) {
@@ -75,8 +75,8 @@ export default function Presale() {
           chainId: bscTestnet.id,
         });
       } else {
-        if (bscValue < 0.0002) {
-          toast.error("Minimum purchase is 0.0002 BNB");
+        if (bscValue < 0.001) {
+          toast.error("Minimum purchase is 0.001 BNB");
           return;
         }
 
@@ -136,7 +136,7 @@ export default function Presale() {
               Presale price
             </h4>
             <p className="text-sm text-muted-foreground">
-              1 PUMPAI = 0.0001 BNB
+              1 BNB = {pumpaiPerBNB} PUMPAI
             </p>
           </Divider>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -156,7 +156,7 @@ export default function Presale() {
                   if (!isNaN(val)) {
                     // Check if it's a valid number
                     setBscValue(val);
-                    setPumpaiValue(val * 5000);
+                    setPumpaiValue(val * pumpaiPerBNB);
                   } else if (event.target.value === "") {
                     setBscValue(0);
                     setPumpaiValue(0);
@@ -187,7 +187,7 @@ export default function Presale() {
                   if (!isNaN(val)) {
                     // Check if it's a valid number
                     setPumpaiValue(val);
-                    setBscValue(val / 5000);
+                    setBscValue(val / pumpaiPerBNB);
                   } else if (event.target.value === "") {
                     setBscValue(0);
                     setPumpaiValue(0);

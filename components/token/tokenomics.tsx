@@ -97,7 +97,7 @@ export default function Tokenomics() {
           </small>
           <Separator orientation="vertical" />
           <small className="text-sm font-medium leading-none">
-            Total supply: <span className="font-medium"> 100,000,000</span>
+            Total supply: <span className="font-medium">2,500,000,000</span>
           </small>
         </div>
       </div>
