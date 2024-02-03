@@ -13,7 +13,7 @@ import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useChainId } from "wagmi";
 import { bsc, bscTestnet } from "viem/chains";
 import presaleAbi from "@/constants/abi/presale.json";
-import { PRESALETBSC } from "@/lib/adresses";
+import { PRESALEBSC } from "@/lib/adresses";
 import { writeContract } from "wagmi/actions";
 import { TransactionExecutionErrorType, parseEther } from "viem";
 import { toast } from "sonner";
@@ -83,7 +83,7 @@ export default function Presale() {
         try {
           const res = await writeContract(config, {
             abi: presaleAbi.abi,
-            address: PRESALETBSC,
+            address: PRESALEBSC,
             functionName: "buy",
             value: parseEther(bscValue.toString()),
           });
