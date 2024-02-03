@@ -11,7 +11,7 @@ import { calculateTimeLeft } from "@/lib/presaleTimer";
 import { useAccount, useConfig, useReadContract, useSwitchChain } from "wagmi";
 import { useWeb3Modal } from "@web3modal/wagmi/react";
 import { useChainId } from "wagmi";
-import { bsc, bscTestnet } from "viem/chains";
+import { bsc } from "viem/chains";
 import presaleAbi from "@/constants/abi/presale.json";
 import { PRESALEBSC } from "@/lib/adresses";
 import { writeContract } from "wagmi/actions";
@@ -70,9 +70,9 @@ export default function Presale() {
         view: "Connect",
       });
     } else {
-      if (chainId !== bscTestnet.id) {
+      if (chainId !== bsc.id) {
         switchChain({
-          chainId: bscTestnet.id,
+          chainId: bsc.id,
         });
       } else {
         if (bscValue < 0.001) {
@@ -198,7 +198,7 @@ export default function Presale() {
             <div className="col-span-2 w-full">
               <Button className="w-full" onClick={buyPump}>
                 {isConnected
-                  ? chainId !== bscTestnet.id
+                  ? chainId !== bsc.id
                     ? "Switch to BSC"
                     : "Buy"
                   : "Connect Wallet"}
