@@ -1,4 +1,4 @@
-import { TokenForm } from "@/components/dash/tokenform";
+import { TokenForm } from "@/components/dash/token-creation/tokenform";
 import { Button } from "@/components/ui/button";
 import { PlusIcon } from "lucide-react";
 import Image from "next/image";
@@ -20,7 +20,6 @@ export default function Page() {
         <div className="col-span-2">
           <TokenForm />
         </div>
-        <div className=""></div>
       </div>
     </div>
   );

@@ -1,10 +1,6 @@
 import Image from "next/image";
 import dynamic from "next/dynamic";
-
-const WorkInProgress = dynamic(
-  () => import("@/components/dash/workinprogress"),
-  { ssr: false }
-);
+import TokenCreationDialog from "./token-creation/dialog";
 
 export default function Projects() {
   return (
@@ -14,7 +10,7 @@ export default function Projects() {
           Your tokens
         </h3>
 
-        <WorkInProgress />
+        <TokenCreationDialog />
       </div>
 
       <div className="w-full h-96 flex justify-center items-center">
