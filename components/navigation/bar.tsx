@@ -13,6 +13,7 @@ export default function NavBar() {
     <nav className="flex items-center justify-between">
       <Link href="/" className="flex items-center">
         <Image
+          draggable={false}
           src="/pumpailogo.svg"
           alt="Pump.ai"
           width={64}

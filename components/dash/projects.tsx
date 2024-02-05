@@ -1,15 +1,4 @@
-import { MapIcon, PlusIcon } from "lucide-react";
-import { Button } from "../ui/button";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 import Image from "next/image";
-import Link from "next/link";
 import dynamic from "next/dynamic";
 
 const WorkInProgress = dynamic(

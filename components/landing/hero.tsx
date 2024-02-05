@@ -33,9 +33,21 @@ export default function Hero() {
       <div className="my-3 text-center">
         <small className="text-sm font-medium leading-none">Powered by</small>
         <div className="flex items-center space-x-3 mt-2">
-          <Image src="/bsc.webp" alt="BSC" width={100} height={100} />
+          <Image
+            src="/bsc.webp"
+            alt="BSC"
+            width={100}
+            height={100}
+            draggable={false}
+          />
           <div className="h-6 border-l border-secondary"></div>
-          <Image src="/openai.png" alt="Open-AI" width={100} height={100} />
+          <Image
+            src="/openai.png"
+            alt="Open-AI"
+            width={100}
+            height={100}
+            draggable={false}
+          />
         </div>
       </div>
       <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10">

@@ -1,14 +1,17 @@
-import type { Metadata } from "next";
+import { cookieToInitialState } from "wagmi";
+import { config } from "@/lib/walletconnect";
+import { headers } from "next/headers";
+import { Toaster } from "@/components/ui/sonner";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import "./globals.css";
-import { Toaster } from "@/components/ui/sonner";
-import Dots from "@/components/dots";
-import { cookieToInitialState } from "wagmi";
+import type { Metadata } from "next";
+
 import NextTopLoader from "nextjs-toploader";
-import { config } from "@/lib/walletconnect";
-import Web3ModalProvider from "@/context/walletconnect";
-import { headers } from "next/headers";
+import Web3ModalProvider from "@/providers/walletconnect";
+import Dots from "@/components/dots";
+
+import "./globals.css";
+import SessionProvider from "@/providers/session";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +38,7 @@ export default function RootLayout({
         >
           <Dots />
           <Web3ModalProvider initialState={initialState}>
-            {children}
+            <SessionProvider>{children}</SessionProvider>
           </Web3ModalProvider>
           <Toaster />
         </ThemeProvider>

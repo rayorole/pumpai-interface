@@ -6,7 +6,6 @@ import Footer from "@/components/landing/footer";
 import Hero from "@/components/landing/hero";
 import Roadmap from "@/components/landing/roadmap";
 import NavBar from "@/components/navigation/bar";
-import dynamic from "next/dynamic";
 
 export default async function Home() {
   return (
