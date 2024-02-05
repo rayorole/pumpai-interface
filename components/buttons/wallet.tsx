@@ -41,7 +41,7 @@ export default function WalletButton() {
         </>
       ) : (
         <>
-          <span>Get started</span>
+          <span>Get Started</span>
           <WalletIcon className="w-4 h-4 ml-2" />
         </>
       )}

@@ -34,13 +34,13 @@ export default function Mobile() {
             >
               <Link href="/">Home</Link>
             </Button>
-            <Button
+            {/* <Button
               variant="ghost"
               asChild
               className="w-full flex justify-start"
             >
               <Link href="/token">Token</Link>
-            </Button>
+            </Button> */}
             <Button
               variant="ghost"
               asChild

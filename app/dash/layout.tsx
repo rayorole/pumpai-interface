@@ -1,5 +1,4 @@
 import Navbar from "@/components/dash/navbar";
-
 export default function RootLayout({
   children,
 }: {

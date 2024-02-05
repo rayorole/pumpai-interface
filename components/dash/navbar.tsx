@@ -7,9 +7,13 @@ import { Button } from "../ui/button";
 import { BookIcon, TwitterIcon } from "lucide-react";
 import ThemePicker from "../theme-picker";
 import { useWeb3Modal } from "@web3modal/wagmi/react";
+import { useAccount } from "wagmi";
+import { Skeleton } from "../ui/skeleton";
 
 export default function Navbar() {
   const { open, close } = useWeb3Modal();
+  const { address, isConnecting } = useAccount();
+
   return (
     <div className="border-border rounded-lg border md:p-6 bg-background/70 flex w-full items-center justify-between px-3 py-3 backdrop-blur-lg md:px-6 md:py-3">
       <Link
@@ -52,7 +56,13 @@ export default function Navbar() {
             open();
           }}
         >
-          <Jazzicon diameter={24} seed={Math.round(Math.random() * 10000000)} />
+          {isConnecting ? (
+            <Skeleton className="w-8 h-8 rounded-full" />
+          ) : address ? (
+            <Jazzicon diameter={24} seed={parseInt(address.slice(2, 10), 16)} />
+          ) : (
+            <Skeleton className="w-8 h-8 rounded-full" />
+          )}
         </Button>
       </div>
     </div>
