@@ -6,7 +6,7 @@ export default function FeaturesAnimation() {
         src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
         type="module"
       ></script>
-
+      {/* @ts-ignore */}
       <dotlottie-player
         src="https://lottie.host/53e17963-d7f5-45df-b5d7-b29d31b78583/aGIQut4PaH.json"
         background="transparent"
@@ -19,7 +19,9 @@ export default function FeaturesAnimation() {
         playMode="normal"
         loop
         autoplay
-      ></dotlottie-player>
+      >
+        {/* @ts-ignore */}
+      </dotlottie-player>
     </>
   );
 }
