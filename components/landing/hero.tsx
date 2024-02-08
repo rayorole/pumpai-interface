@@ -2,6 +2,7 @@ import { ArrowRight, BookIcon, Github, MapIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import DeployNow from "./deploy-now";
 
 export default function Hero() {
   return (
@@ -21,14 +22,14 @@ export default function Hero() {
         <ArrowRight className="ml-1 w-4 h-4" />
       </a>
       <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
-        Your all in one decentralized launchpad
+        AI-powered token creation platform for everyone
       </h1>
       <span
         className="max-w-[750px] text-center text-lg text-muted-foreground sm:text-xl mt-4"
         data-brr="1"
       >
-        Create and launch your own token, presale, or liquidity pool in a few
-        clicks using the power of AI and blockchain.
+        Pumpai is a platform that allows anyone to create and manage their own
+        AI-powered tokens. No coding or blockchain knowledge required.
       </span>
       <div className="my-3 text-center">
         <small className="text-sm font-medium leading-none">Powered by</small>
@@ -51,13 +52,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex w-full items-center justify-center space-x-4 py-4 md:pb-10">
-        <Button
-          asChild
-          size="sm"
-          className="bg-gradient-to-r from-[#DC1FFF] to-primary backdrop-blur-[3px] shadow-2xl hover:shadow-primary transition hover:opacity-100 opacity-80 duration-200 hover:from-[#03E1FF] hover:to-[#DC1FFF]"
-        >
-          <Link href="/">Launch App</Link>
-        </Button>
+        <DeployNow />
         <Button asChild size="sm" variant="outline">
           <Link href="https://docs.pumpai.finance">
             <BookIcon className="w-4 h-4 mr-2" />
