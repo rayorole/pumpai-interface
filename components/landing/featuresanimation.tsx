@@ -1,13 +1,25 @@
-"use client";
-
-import Lottie from "lottie-react";
-import groovyWalkAnimation from "./features-anim.json";
-
-import { DotLottiePlayer, Controls } from "@dotlottie/react-player";
-import "@dotlottie/react-player/dist/index.css";
-
 export default function FeaturesAnimation() {
   return (
-    <iframe src="https://lottie.host/embed/ab547a12-3a2f-4dbe-ba3a-1f9ced3148d2/xUu15FmeVh.json"></iframe>
+    <>
+      <script
+        async
+        src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+        type="module"
+      ></script>
+
+      <dotlottie-player
+        src="https://lottie.host/53e17963-d7f5-45df-b5d7-b29d31b78583/aGIQut4PaH.json"
+        background="transparent"
+        speed="1"
+        style={{
+          width: "100%",
+          height: "100%",
+        }}
+        direction="1"
+        playMode="normal"
+        loop
+        autoplay
+      ></dotlottie-player>
+    </>
   );
 }

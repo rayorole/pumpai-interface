@@ -32,25 +32,7 @@ export default function Features() {
       <div className="grid gap-10 grid-cols-none md:grid-cols-2">
         <div className="flex justify-center">
           {/* <Image src="/solana-3d.png" alt="Solana" width={370} height={370} /> */}
-          <script
-            async
-            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-            type="module"
-          ></script>
-          {/* @tslint-disable-next-line */}
-          <dotlottie-player
-            src="https://lottie.host/53e17963-d7f5-45df-b5d7-b29d31b78583/aGIQut4PaH.json"
-            background="transparent"
-            speed="1"
-            style={{
-              width: "100%",
-              height: "100%",
-            }}
-            direction="1"
-            playMode="normal"
-            loop
-            autoplay
-          ></dotlottie-player>
+          <FeaturesAnimation />
         </div>
         <ul className="gap-4 md:gap-6 flex flex-col">
           <li>
