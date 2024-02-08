@@ -72,10 +72,13 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:text-gray-200 dark:hover:text-white text-neutral-700 h-9 px-4 py-2 hover:bg-muted/70"
-              href="/dash/presales"
+              className="inline-flex items-center justify-center space-x-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 dark:text-gray-200 dark:hover:text-white text-neutral-700 h-9 px-4 py-2 hover:bg-muted/70"
+              href="/dash/nft"
             >
-              Presales
+              <span>NFT</span>
+              <Badge variant="secondary" className="text-xs">
+                Coming soon
+              </Badge>
             </Link>
           </li>
         </ul>
