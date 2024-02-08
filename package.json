@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@agnostico/browser-solidity-compiler": "^0.1.1",
-    "@dotlottie/react-player": "^1.6.15",
     "@hookform/resolvers": "^3.3.4",
     "@mdx-js/loader": "^3.0.0",
     "@mdx-js/react": "^3.0.0",
@@ -32,7 +31,6 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "ethers": "^6.10.0",
-    "lottie-react": "^2.4.0",
     "lucide-react": "^0.309.0",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
