@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="mx-auto flex max-w-[1300px] flex-col items-center gap-2 py-8 md:py-12 md:pb-8 lg:py-24 lg:pb-20 relative">
       <a
         className="inline-flex items-center rounded-lg bg-muted px-3 py-1 text-sm font-medium"
-        href="/docs/changelog"
+        href="https://docs.pumpai.finance/"
       >
         🎉
         <div
@@ -17,8 +17,8 @@ export default function Hero() {
           role="none"
           className="shrink-0 bg-border w-[1px] mx-2 h-4"
         ></div>
-        <span className="sm:hidden">$PUMPAI - Live on BSC Mainnet</span>
-        <span className="hidden sm:inline">$PUMPAI - Live on BSC Mainnet</span>
+        <span className="sm:hidden">Pump.ai Beta - Now live</span>
+        <span className="hidden sm:inline">Pump.ai Beta - Now live</span>
         <ArrowRight className="ml-1 w-4 h-4" />
       </a>
       <h1 className="text-center text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">

@@ -1,6 +1,8 @@
 import {
   CoinsIcon,
   CrosshairIcon,
+  GanttChartSquareIcon,
+  ImageIcon,
   RocketIcon,
   TrendingUpIcon,
   WrenchIcon,
@@ -26,7 +28,7 @@ export default function Features() {
           <WrenchIcon className="h-5 w-5" />
         </div>
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">
-          Upcoming features
+          Features
         </h3>
       </div>
       <div className="grid gap-10 grid-cols-none md:grid-cols-2">
@@ -51,17 +53,36 @@ export default function Features() {
           <li>
             <p className="flex flex-col">
               <span>
-                <TrendingUpIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <ImageIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
                 <span className="text-foreground font-medium">
-                  Automated liquidity
+                  Non fungible token creation
                 </span>
               </span>
               <span className="text-muted-foreground">
-                Optionally create a liquidity pool for your token.
+                Create a unique token that represents ownership of a digital
+                asset, powered by AI.
               </span>
             </p>
+            <Badge variant="secondary">Coming soon</Badge>
           </li>
+
           <li>
+            <p className="flex flex-col">
+              <span>
+                <GanttChartSquareIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
+                <span className="text-foreground font-medium">
+                  Custom token dashboard
+                </span>
+              </span>
+              <span className="text-muted-foreground">
+                Manage your token, view analytics and more from a single
+                dashboard.
+              </span>
+            </p>
+            <Badge variant="secondary">Coming soon</Badge>
+          </li>
+
+          {/* <li>
             <p className="flex flex-col">
               <span>
                 <RocketIcon className="text-foreground/80 mb-1 mr-1.5 inline-flex h-4 w-4" />
@@ -89,7 +110,7 @@ export default function Features() {
               </span>
             </p>
             <Badge variant="secondary">Coming soon</Badge>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
