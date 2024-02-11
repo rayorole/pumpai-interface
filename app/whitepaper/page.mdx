@@ -2,89 +2,76 @@ import Introduction from "@/components/whitepaper/introduction";
 
 <Introduction />
 
-# The Problem
+# Introduction
 
-Crypto tokens are a new form of digital asset that have been receiving a lot of attention in recent years.
-Everyone from individual investors to large corporations are looking to get involved in the space.
-However, the process of creating and managing a token is still quite complex and requires a lot of technical knowledge.
-This has led to a situation where only a small number of people are able to create and manage tokens, which has limited the growth of the industry.
+The purpose of this whitepaper is to provide a comprehensive overview of the
+technical and economic aspects of the PumpAI protocol. This document is intended
+to be a living document and will be updated as the protocol evolves.
 
-# The Solution
+## What is PumpAI?
 
-Pumpai.finance is a decentralized platform that makes it easy for anyone to create and manage their own crypto tokens.
-No technical knowledge is required, AI will do all the work for you.
-This will open up the world of crypto tokens to a much larger audience, which will help to grow the industry as a whole.
+PumpAI is a decentralized protocol that enables the creation of tokenized assets.
+The protocol is designed to be a decentralized and permissionless system that allows
+anyone to create and manage assets. The protocol is built on top of the Ethereum Virtual Machine (EVM)
+and is designed to be compatible with the Ethereum ecosystem.
 
-# The Vision
+## Why PumpAI?
 
-Our vision is to create a world where anyone can create and manage their own crypto tokens.
+The PumpAI protocol is designed to solve the problem of creating and managing tokenized assets.
+Most people are familiar with the concept of tokenized assets, but the process of creating and managing them requires
+programming knowledge and more importantly, skill. The PumpAI protocol aims to solve this problem by providing a
+simple and easy-to-use interface for creating and managing tokenized assets.
 
-# Features
+## Where does AI come in?
 
-## AI Token Creation
+The PumpAI protocol uses AI to help users brand their assets.
+OpenAI's GPT-4 is used to generate names and descriptions, but even more importantly, it is used to generate logos.
 
-Create your ERC20 token with AI, no technical knowledge required.
-The token creation tool will support most, if not all, EVM compatible chains.
+## How does it work?
 
-### Basic Token Features
-- `name()` - Returns the name of the token
-- `symbol()` - Returns the symbol of the token
-- `decimals()` - Returns the number of decimals the token uses
-- `totalSupply()` - Returns the total supply of the token
-- `balanceOf(address)` - Returns the balance of the given address
-- `transfer(address, uint256)` - Transfers the given amount of tokens to the given address
-- `approve` - Approves the given address to spend the given amount of tokens
-- `allowance` - Returns the amount of tokens the given address is allowed to spend
-- `transferFrom` - Transfers the given amount of tokens from the given address to another address
-- `increaseAllowance` - Increases the amount of tokens the given address is allowed to spend
-- `decreaseAllowance` - Decreases the amount of tokens the given address is allowed to spend
+All assets on the PumpAI protocol are represented by a smart contract on the Ethereum blockchain.
+The smart contract contains all the information about the asset, including its name, description, and logo.
+The smart contract also contains the logic for managing the asset, such as transferring ownership and updating the asset's information.
 
-Pump.ai token creation tool follows the ERC20 standard, which is the most widely used standard for creating tokens on any EVM compatible chain.
+These smart contracts are programmed in Solidity, the programming language used to write smart contracts on the Ethereum blockchain.
+All smart contracts on the PumpAI protocol are [open source](https://github.com/pump-ai) and can be viewed and verified by anyone.
 
-### Advanced Token Features
-- `burn` - Destroys the given amount of tokens
-- `mint` - Creates the given amount of tokens and assigns them to the given address
-- `pause` - Pauses the token
-- `unpause` - Unpauses the token
-- `isPaused` - Returns whether the token is paused or not
-- `addMinter` - Adds the given address as a minter
-- `renounceMinter` - Removes the sender as a minter
-- `isMinter` - Returns whether the given address is a minter or not
-- `addPauser` - Adds the given address as a pauser
-- `renouncePauser` - Removes the sender as a pauser
-- `isPauser` - Returns whether the given address is a pauser or not
+Users can define the parameters of their asset, such as the name, description and more, all parameters will be used to compile the
+smart contract, this will al be done in the browser using the [solc-js compiler](https://github.com/ethereum/solc-js?tab=readme-ov-file#solc-js).
 
-__Note: Token creatiion tool is still under development and will be released soon.__
+Once the smart contract is compiled, the bytecode and Application Binary Interface (ABI) will be used to deploy the smart contract.
+Users must sign the transaction using their EVM compatible wallet, such as Metamask. Once confirmed, the smart contract will be created.
 
-## Token Management Dashboard
+The one who signs the transaction will be the owner of the asset, and can transfer ownership to another address.
+So we (PumpAI) do not have any control over the assets, we only provide the tools necessary to create and manage them.
 
-Once you have created your token, you can manage it using the token management dashboard.
-The dashboard will allow you to perform a wide range of tasks, such as minting new tokens, burning tokens, pausing the token, and much more.
+## Ecosystem
 
-## Automated liquidity pool creation
+Once the final beta version is released, PumpAI will deploy its own $PUMPAI token, which will be used to govern the protocol.
+The token will be used to vote on proposals.
 
-Users can optioanlly create a liquidity pool for their token on the supported DEXs.
+For every asset created, the owner will receive $PUMPAI tokens, which will be used to vote on proposals.
 
-### Supported DEXs
-Any UniSwap fork, eg. SushiSwap, PancakeSwap, etc.
 
-### Automated Liquidity Pool Management
+## What is next?
 
-Users will be able to manage their liquidity pool from the token management dashboard.
-This will include tasks such as adding/removing liquidity, and more.
+We are currently working on the beta version of the protocol, which will be released soon.
+Our team is working hard to make the protocol as user-friendly as possible.
 
-## Custom launchpad for your token
+Once the token creation process is complete, we will be working on supporting other blockchains, such as Tron and Optimism.
+Eventually, you will also be able to deploy Non-Fungible Tokens (NFTs) on the PumpAI protocol.
 
-This feature will allow users to create a custom launchpad for their token.
-This will allow them to raise funds for their project by selling their tokens to the public.
+More information about the roadmap can be found on the [PumpAI docs](https://docs.pumpai.com/roadmap).
 
-### Features
-- KYC/AML integration
-- Whitelisting
-- Token vesting
-- Token lockup
-- Very own launchpad page for your token
-- Fixed price sale
-- Presale duration
-- Presale hardcap and softcap
 
+## Conclusion
+
+The PumpAI protocol is designed to be a decentralized and permissionless system that allows anyone to create and manage assets.
+The protocol is built on top of the Ethereum Virtual Machine (EVM) and is designed to be compatible with the Ethereum ecosystem.
+
+The PumpAI protocol uses AI to help users brand their assets.
+OpenAI's GPT-4 is used to generate names and descriptions, but even more importantly, it is used to generate logos.
+
+## Disclaimer
+
+We are not responsible for any loss of funds, do your own research before using the protocol.
